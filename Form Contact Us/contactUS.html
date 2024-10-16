@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="contactUS.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form>
+        <h1>Contact Us</h1>
+        <input type="text" id="firstName" placeholder="First Name" required />
+        <input type="text" id="lastName" placeholder="Last Name" required />
+        <input type="email" id="email" placeholder="Email" required />
+        <input type="text" id="mobile" placeholder="Mobile" required />
+        <h4>Type Your Message Here...</h4>
+        <textarea id="message" required></textarea>
+        <input type="submit" value="Send" id="btn"/>
+      </form>
+    </div>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+      var btn = document.getElementById('btn');
+      btn.addEventListener('click', function(e) {
+        e.preventDefault()
+        var firstName = document.getElementById('firstName').value;
+        var lastName = document.getElementById('lastName').value;
+        var email = document.getElementById('email').value;
+        var mobile = document.getElementById('mobile').value;
+        var message = document.getElementById('message').value;
+        var body =
+          'firstName: ' +
+          firstName +
+          '<br/> lastName: ' +
+          lastName +
+          '<br/> email: ' +
+          email +
+          '<br/> mobile: ' +
+          mobile +
+          '<br/> message: ' +
+          message;
+
+        Email.send({
+          SecureToken: "5321688b-4502-4d37-9090-630054417cc3",
+          To: "mantisfootfile@gmail.com",
+          From: "shimeilimbo6@gmail.com",
+          Subject: "Contact message",
+          Body: body
+        }).then((message) => alert("message sent succesfully"));
+      });
+    </script>
+  </body>
+</html>
