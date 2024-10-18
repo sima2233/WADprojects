@@ -19,6 +19,70 @@ body {
     height: 100vh;
 }
 
+.followbtn {
+    all: unset;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 0.6em 2em;
+    border: mediumspringgreen solid 0.15em;
+    border-radius: 0.25em;
+    color: mediumspringgreen;
+    font-size: 1.5em;
+    font-weight: 600;
+    cursor: pointer;
+    overflow: hidden;
+    transition: border 300ms, color 300ms;
+    user-select: none;
+}
+
+.followbtn p {
+    z-index: 1;
+}
+
+.followbtn:hover {
+    color: #212121;
+}
+
+.followbtn:active {
+    border-color: teal;
+}
+
+.followbtn::after,
+.followbtn::before {
+    content: "";
+    position: absolute;
+    width: 9em;
+    aspect-ratio: 1;
+    background: mediumspringgreen;
+    opacity: 50%;
+    border-radius: 50%;
+    transition: transform 500ms, background 300ms;
+}
+
+.followbtn::before {
+    left: 0;
+    transform: translateX(-8em);
+}
+
+.followbtn::after {
+    right: 0;
+    transform: translateX(8em);
+}
+
+.followbtn:hover:before {
+    transform: translateX(-1em);
+}
+
+.followbtn:hover:after {
+    transform: translateX(1em);
+}
+
+.followbtn:active:before,
+.followbtn:active:after {
+    background: teal;
+}
+
 .social-media-buttons {
     display: flex;
     justify-content: center;
@@ -37,6 +101,28 @@ body {
     transition: all 0.3s;
     display: grid;
     place-items: center;
+}
+
+.social-media-button {
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.social-media-button svg {
+    transition: filter 0.3s ease;
+}
+
+.social-media-button:hover {
+    background-color: white;
+    /* Change button background to white */
+}
+
+.social-media-button:hover svg {
+    filter: invert(100%);
+    /* Invert the SVG colors */
 }
 
 .social-media-button:hover {
