@@ -125,6 +125,7 @@ body {
     /* Invert the SVG colors */
 }
 
+
 .social-media-button:hover {
     outline-offset: 3px;
     transition: all 0.3s;
