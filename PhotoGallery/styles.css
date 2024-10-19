@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+#gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1em;
+}
+
+#gallery a {
+    margin: 10px;
+}
+
+#gallery img {
+    max-width: 150px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+
+#bio,
+#contact {
+    padding: 2em;
+    text-align: center;
+}
+
+h2 {
+    color: #333;
+}
+
+.profile-picture-container {
+    text-align: center;
+}
+
+.profile-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #333;
+}
+
+.profile-name {
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #333;
+}

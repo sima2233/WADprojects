@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="lightbox/lightbox.css">
+</head>
+<body>
+    <header>
+        <h1>SHIMEI'S GALLERY</h1>
+        <nav>
+            <ul>
+                <li><a href="#" data-category="all">All</a></li>
+                <li><a href="#" data-category="nature">Nature</a></li>
+                <li><a href="#" data-category="urban">Urban</a></li>
+                <li><a href="#" data-category="portrait">Items</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="gallery">
+        
+        <!-- Image thumbnails go here -->
+        <a href="images/Bigplant.jpg" data-lightbox="gallery" data-category="nature"><img src="images/Bigplant.jpg" alt="Nature 1"></a>
+        <a href="images/fisheye.jpg" data-lightbox="gallery" data-category="urban"><img src="images/veryorangeclouds.jpg" alt="Urban 1"></a>
+        <a href="images/serenanissan.jpg" data-lightbox="gallery" data-category="portrait"><img src="images/robotpic.jpg" alt="Portrait 1"></a>
+        <!-- More images as needed -->
+    </section>
+
+    <section id="bio">
+        <h2>Photographer's Bio</h2>
+        <p>
+            Hi, I'm Jane Doe, an aspiring photographer with a deep 
+            love for capturing the beauty of the world around me.<br> My journey began with a 
+            fascination for the natural landscapes and vibrant cityscapes of my hometown.<br>
+            Through dedicated practice and formal education, 
+            I've developed a unique artistic vision that brings everyday moments to life.<br> 
+            I enjoy exploring diverse subjects, from nature scenes to intimate portraits, 
+            always seeking to convey powerful stories and emotions through my lens.<br>
+            I'm committed to continuous learning, collaborating with other artists, and pushing my 
+            creative boundaries.<br> 
+            Photography isn't just my passion;
+             it's my way of making a positive impact.<br> I volunteer my 
+             skills for community projects and environmental causes, believing in 
+             the power of visual storytelling to inspire change.</p>
+        <div class="profile-picture-container">
+            <img src="images/ohnotoosexy.jpg" alt="Profile Picture" class="profile-picture">
+            <div class="profile-name">Shimei Simataa Limbo</div>
+    </section>
+  
+    <section id="contact">
+        <h2>Contact Information</h2>
+        <p>Email: <a href="mailto:shimeilimbo6@gmail.com">shimeilimbo6@gmail.com</a></p>
+        <p>Phone: 0815619296</p>
+    </section>
+
+    <script src="lightbox/lightbox.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
