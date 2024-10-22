@@ -1,0 +1,34 @@
+/* Style the body */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+}
+
+#container
+
+/* Style the form */
+#weatherForm {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Style the city input field (you can customize further) */
+#city {
+    padding: 10px;
+    font-size: 16px;
+    width: 200px;
+}
+
+/* Style the submit button */
+button {
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Style for weather data display */
+#weatherData {
+    margin-top: 20px;
+    font-size: 18px;
+}
