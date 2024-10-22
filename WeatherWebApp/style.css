@@ -3,9 +3,16 @@ body {
     font-family: Arial, sans-serif;
     text-align: center;
     margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    /* Centers horizontally */
+    align-items: center;
+    /* Centers vertically */
+    height: 100vh;
+    /* Full viewport height */
+    margin: 0;
+    /* Remove default margin */
 }
-
-#container
 
 /* Style the form */
 #weatherForm {
@@ -31,4 +38,15 @@ button {
 #weatherData {
     margin-top: 20px;
     font-size: 18px;
+}
+
+/* Style for container */
+#container {
+    margin: auto;
+    width: 500px;
+    height: 450px;
+    background-color: antiquewhite;
+    padding: 20px 15px;
+    border-radius: 4px;
+    box-sizing: border-box;
 }
