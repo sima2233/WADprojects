@@ -47,6 +47,6 @@ button {
     height: 450px;
     background-color: antiquewhite;
     padding: 20px 15px;
-    border-radius: 4px;
+    border-radius: 8px;
     box-sizing: border-box;
 }
