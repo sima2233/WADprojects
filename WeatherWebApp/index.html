@@ -3,32 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto
-    :wght@300;400;500;700;900&display=swap"
-    rel="stylesheet">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Weather App</title>
 </head>
 <body background="images/cloud.jpg">
     <div id="container">  
         <h1>Cloud 9 Forecast</h1>
-        <form id="weatherForm">   
-            <input class="input" placeholder="Enter city name" type="text" required>         
+        
+        <form id="weatherForm">
+            <!-- Added id="city" to the input field -->
+            <input id="city" class="input" placeholder="Enter city name" type="text" required>
             <button class="pushable">
                 <span class="shadow"></span>
                 <span class="edge"></span>
-                <span class="front"> Search </span>
-              </button>
+                <span class="front">Search</span>
+            </button>
         </form>
+
         <div class="not-found">
-            <img src="images/404.png">
+            <img src="images/404.png" alt="Not Found">
             <p>Oops! Invalid location :/</p>
         </div>
 
         <div class="weather-box">
-            <img src="">
+            <img src="" alt="Weather Icon">
             <p class="temperature"></p>
             <p class="description"></p>
         </div>
@@ -50,11 +50,9 @@
             </div>
         </div>
     </div>
-<script src="https://kit.fontawesome.com/7c8801c017.js"
-crossorigin="anonymous">
 
-</script>
-<script src="index.js"></script>
-
+    <!-- Font Awesome script -->
+    <script src="https://kit.fontawesome.com/7c8801c017.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
 </body>
 </html>

@@ -1,13 +1,14 @@
-const container = document.querySelector('.container');
-const input = document.querySelector('.search-box button');
+const container = document.querySelector('#container');
+const input = document.querySelector('.pushable');
 const weatherBox = document.querySelector('.weather-box');
 const weatherDetails = document.querySelector('.weather-details');
 const error404 = document.querySelector('.not-found');
 
-search.addEventListener('click', () => {
+input.addEventListener('click', (event) => {
+    event.preventDefault(); // Prevent form submission behavior
 
-    const APIKey = 'a6ed396406561990eae7c67194dfe7ee';
-    const city = document.querySelector('.search-box input').value;
+    const APIKey = 'YOUR_API_KEY';
+    const city = document.querySelector('#city').value;
 
     if (city === '')
         return;
@@ -38,23 +39,18 @@ search.addEventListener('click', () => {
                 case 'Clear':
                     image.src = 'images/clear.png';
                     break;
-
                 case 'Rain':
                     image.src = 'images/rain.png';
                     break;
-
                 case 'Snow':
                     image.src = 'images/snow.png';
                     break;
-
                 case 'Clouds':
                     image.src = 'images/cloud.png';
                     break;
-
                 case 'Haze':
                     image.src = 'images/mist.png';
                     break;
-
                 default:
                     image.src = '';
             }
@@ -69,9 +65,5 @@ search.addEventListener('click', () => {
             weatherBox.classList.add('fadeIn');
             weatherDetails.classList.add('fadeIn');
             container.style.height = '590px';
-
-
         });
-
-
 });
